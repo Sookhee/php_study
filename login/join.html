@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title></title>
+        <style>
+            body{
+                text-align: center;
+            }
+
+            .join{
+                border: 2px solid #ccc;
+                display: inline-block;
+                padding: 10px 30px 20px;
+                margin-top: 20px;
+           }
+
+           td{
+               text-align: left;
+           }
+
+           tr{
+               height : 22px;
+               line-height: 22px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="join">
+            <form method="post" action="join.php">
+                <h2>Join</h2>
+                <table>
+                    <tr>
+                        <td width="140px">회원 ID</td>
+                        <td><input type="text" name="user-id"> <input type="button" value="ID 중복 검사"></td>                        
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="user-pw"></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="user-pw-re"></td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td><input type="text" name="user-name"></td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td><input type="radio" name="user-gender" checked="checked" value="female">여 <input type="radio" name="user-gender" value="male">남</td>
+                    </tr>
+                    <tr>
+                        <td>집전화</td>
+                        <td><input type="text" name="user-home-phone"></td>
+                    </tr>
+                    <tr>
+                        <td>휴대전화</td>
+                        <td><input type="text" name="user-phone"></td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td><input type="email" name="user-email"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">주소</td>
+                        <td><input type="text" name="user-address" placeholder="우편번호"> <input type="button" value="우편번호 찾기"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="user-address-1" placeholder="도로명주소"> <input type="text" name="user-address-2" placeholder="지번주소"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="user-address-3" placeholder="나머지 주소"></td>
+                    </tr>
+                    <tr>
+                        <td>취미</td>
+                        <td><input type="checkbox" name="hobby[]" value="낚시">낚시 
+                            <input type="checkbox" name="hobby[]" value="운동">운동 
+                            <input type="checkbox" name="hobby[]" value="여행">여행</td>
+                    </tr>
+                    <tr>
+                        <td>알게 된 계기</td>
+                        <td>
+                            <select name="user-reason">
+                                <option value="sns">SNS</option>
+                                <option value="journal">잡지</option>
+                                <option value="internet">인터넷</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center; padding-top: 10px;"><button type="submit">SUBMIT</button></td>
+                    </tr>
+                </table>
+            </form>
+
+            <form method="post" action="select.php">
+                <select name="list[]" size="5" multiple>
+                    <option value="windows">Windows</option>
+                    <option value="maxos">Mac OS</option>
+                    <option value="linux">Linux</option>
+                    <option value="android">Android</option>
+                    <option value="ios">ios</option>
+                </select>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </body>
+</html>
