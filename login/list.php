@@ -13,6 +13,7 @@
         </style>
     </head>
     <body>
+    <div class="join_list">
         <h1>회원가입 목록</h1>
         <table border="2">
             <tr>
@@ -41,5 +42,6 @@ mysqli_close($conn);
 ?>
 
 </table>
+</div>
 </body>
 </html>
