@@ -267,3 +267,32 @@ mysqli_close($conn);
 	```
 	
 ## 2020.01.08.
+
+#### write_pro.php - 게시물 작성
+1) 입력한 값이 bbs 테이블에 insert
+- 현재 시각 구하는 함수 now()
+2)
+```html
+<meta http-equiv='refresh' content="0;url='list.php'">
+```
+
+#### File upload
+```php
+$_FILES['user-file']
+```
+*['name'], ['type'], ['size'] 자동 생성
+
+#### IP 주소 구하기
+```php
+$_SERVER['REMOTE_ADDR']
+```
+
+#### 앞으로 공부 해야할 것
+1. 파일 업로드
+2. 이미지 저장 (blob)
+* 요즘은 서버에 이미지를 올리고 주소로(text) 저장함
+3. 다운로드하기
+4. 엑셀파일로 다운로드 하기
+5. 페이징 알고리즘 구현
+6. 답글 달기
+7. 쇼핑몰 제작
